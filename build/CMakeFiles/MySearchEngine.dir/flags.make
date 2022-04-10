@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/ryan/Applications/MySearchEngine/include/Search -I/home/ryan/Applications/MySearchEngine/include/Synonyms -I/home/ryan/Applications/MySearchEngine/include/CSVReader
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 
