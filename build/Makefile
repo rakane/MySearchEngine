@@ -57,7 +57,7 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ryan/Applications/MySearchEngine
+CMAKE_SOURCE_DIR = /home/ryan/Applications/MySearchEngine/SearchEngine
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/ryan/Applications/MySearchEngine/build
@@ -153,29 +153,29 @@ src/CSVReader/CSVReader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.s
 .PHONY : src/CSVReader/CSVReader.cpp.s
 
-src/Search/Config.o: src/Search/Config.cpp.o
-.PHONY : src/Search/Config.o
+src/Search/PageIndex.o: src/Search/PageIndex.cpp.o
+.PHONY : src/Search/PageIndex.o
 
 # target to build an object file
-src/Search/Config.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o
-.PHONY : src/Search/Config.cpp.o
+src/Search/PageIndex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o
+.PHONY : src/Search/PageIndex.cpp.o
 
-src/Search/Config.i: src/Search/Config.cpp.i
-.PHONY : src/Search/Config.i
+src/Search/PageIndex.i: src/Search/PageIndex.cpp.i
+.PHONY : src/Search/PageIndex.i
 
 # target to preprocess a source file
-src/Search/Config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.i
-.PHONY : src/Search/Config.cpp.i
+src/Search/PageIndex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.i
+.PHONY : src/Search/PageIndex.cpp.i
 
-src/Search/Config.s: src/Search/Config.cpp.s
-.PHONY : src/Search/Config.s
+src/Search/PageIndex.s: src/Search/PageIndex.cpp.s
+.PHONY : src/Search/PageIndex.s
 
 # target to generate assembly for a file
-src/Search/Config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.s
-.PHONY : src/Search/Config.cpp.s
+src/Search/PageIndex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.s
+.PHONY : src/Search/PageIndex.cpp.s
 
 src/Search/Search.o: src/Search/Search.cpp.o
 .PHONY : src/Search/Search.o
@@ -225,29 +225,29 @@ src/Search/SearchEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.s
 .PHONY : src/Search/SearchEngine.cpp.s
 
-src/Synonyms/Synonyms.o: src/Synonyms/Synonyms.cpp.o
-.PHONY : src/Synonyms/Synonyms.o
+src/Search/Synonyms.o: src/Search/Synonyms.cpp.o
+.PHONY : src/Search/Synonyms.o
 
 # target to build an object file
-src/Synonyms/Synonyms.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o
-.PHONY : src/Synonyms/Synonyms.cpp.o
+src/Search/Synonyms.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o
+.PHONY : src/Search/Synonyms.cpp.o
 
-src/Synonyms/Synonyms.i: src/Synonyms/Synonyms.cpp.i
-.PHONY : src/Synonyms/Synonyms.i
+src/Search/Synonyms.i: src/Search/Synonyms.cpp.i
+.PHONY : src/Search/Synonyms.i
 
 # target to preprocess a source file
-src/Synonyms/Synonyms.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.i
-.PHONY : src/Synonyms/Synonyms.cpp.i
+src/Search/Synonyms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.i
+.PHONY : src/Search/Synonyms.cpp.i
 
-src/Synonyms/Synonyms.s: src/Synonyms/Synonyms.cpp.s
-.PHONY : src/Synonyms/Synonyms.s
+src/Search/Synonyms.s: src/Search/Synonyms.cpp.s
+.PHONY : src/Search/Synonyms.s
 
 # target to generate assembly for a file
-src/Synonyms/Synonyms.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.s
-.PHONY : src/Synonyms/Synonyms.cpp.s
+src/Search/Synonyms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MySearchEngine.dir/build.make CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.s
+.PHONY : src/Search/Synonyms.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -285,18 +285,18 @@ help:
 	@echo "... src/CSVReader/CSVReader.o"
 	@echo "... src/CSVReader/CSVReader.i"
 	@echo "... src/CSVReader/CSVReader.s"
-	@echo "... src/Search/Config.o"
-	@echo "... src/Search/Config.i"
-	@echo "... src/Search/Config.s"
+	@echo "... src/Search/PageIndex.o"
+	@echo "... src/Search/PageIndex.i"
+	@echo "... src/Search/PageIndex.s"
 	@echo "... src/Search/Search.o"
 	@echo "... src/Search/Search.i"
 	@echo "... src/Search/Search.s"
 	@echo "... src/Search/SearchEngine.o"
 	@echo "... src/Search/SearchEngine.i"
 	@echo "... src/Search/SearchEngine.s"
-	@echo "... src/Synonyms/Synonyms.o"
-	@echo "... src/Synonyms/Synonyms.i"
-	@echo "... src/Synonyms/Synonyms.s"
+	@echo "... src/Search/Synonyms.o"
+	@echo "... src/Search/Synonyms.i"
+	@echo "... src/Search/Synonyms.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

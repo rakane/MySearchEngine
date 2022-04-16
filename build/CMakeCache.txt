@@ -215,7 +215,7 @@ SearchEngine_BINARY_DIR:STATIC=/home/ryan/Applications/MySearchEngine/build
 SearchEngine_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-SearchEngine_SOURCE_DIR:STATIC=/home/ryan/Applications/MySearchEngine
+SearchEngine_SOURCE_DIR:STATIC=/home/ryan/Applications/MySearchEngine/SearchEngine
 
 
 ########################
@@ -288,8 +288,6 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -302,7 +300,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/ryan/Applications/MySearchEngine
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/ryan/Applications/MySearchEngine/SearchEngine
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

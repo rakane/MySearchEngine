@@ -1,4 +1,4 @@
-# Install script for directory: /home/ryan/Applications/MySearchEngine
+# Install script for directory: /home/ryan/Applications/MySearchEngine/SearchEngine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

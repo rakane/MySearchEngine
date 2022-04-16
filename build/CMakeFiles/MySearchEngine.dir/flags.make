@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/x86_64-linux-gnu-g++-7
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ryan/Applications/MySearchEngine/include/Search -I/home/ryan/Applications/MySearchEngine/include/Synonyms -I/home/ryan/Applications/MySearchEngine/include/CSVReader
+CXX_INCLUDES = -I/home/ryan/Applications/MySearchEngine/SearchEngine/include/Search -I/home/ryan/Applications/MySearchEngine/SearchEngine/include/Synonyms -I/home/ryan/Applications/MySearchEngine/SearchEngine/include/CSVReader
 
 CXX_FLAGS = -g
 

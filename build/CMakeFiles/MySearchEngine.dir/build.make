@@ -53,7 +53,7 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ryan/Applications/MySearchEngine
+CMAKE_SOURCE_DIR = /home/ryan/Applications/MySearchEngine/SearchEngine
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/ryan/Applications/MySearchEngine/build
@@ -70,106 +70,106 @@ include CMakeFiles/MySearchEngine.dir/progress.make
 include CMakeFiles/MySearchEngine.dir/flags.make
 
 CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
-CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o: ../src/CSVReader/CSVReader.cpp
+CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o: /home/ryan/Applications/MySearchEngine/SearchEngine/src/CSVReader/CSVReader.cpp
 CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o -c /home/ryan/Applications/MySearchEngine/src/CSVReader/CSVReader.cpp
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o -c /home/ryan/Applications/MySearchEngine/SearchEngine/src/CSVReader/CSVReader.cpp
 
 CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/src/CSVReader/CSVReader.cpp > CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.i
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/SearchEngine/src/CSVReader/CSVReader.cpp > CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.i
 
 CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/src/CSVReader/CSVReader.cpp -o CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.s
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/SearchEngine/src/CSVReader/CSVReader.cpp -o CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.s
 
-CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
-CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o: ../src/Search/Config.cpp
-CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o -c /home/ryan/Applications/MySearchEngine/src/Search/Config.cpp
+CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
+CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o: /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/PageIndex.cpp
+CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o -c /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/PageIndex.cpp
 
-CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/src/Search/Config.cpp > CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.i
+CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/PageIndex.cpp > CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.i
 
-CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/src/Search/Config.cpp -o CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.s
+CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/PageIndex.cpp -o CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.s
 
 CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
-CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o: ../src/Search/Search.cpp
+CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o: /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Search.cpp
 CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o -c /home/ryan/Applications/MySearchEngine/src/Search/Search.cpp
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o -c /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Search.cpp
 
 CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/src/Search/Search.cpp > CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.i
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Search.cpp > CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.i
 
 CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/src/Search/Search.cpp -o CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.s
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Search.cpp -o CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.s
 
 CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
-CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o: ../src/Search/SearchEngine.cpp
+CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o: /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/SearchEngine.cpp
 CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o -c /home/ryan/Applications/MySearchEngine/src/Search/SearchEngine.cpp
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o -c /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/SearchEngine.cpp
 
 CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/src/Search/SearchEngine.cpp > CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.i
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/SearchEngine.cpp > CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.i
 
 CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/src/Search/SearchEngine.cpp -o CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.s
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/SearchEngine.cpp -o CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.s
 
-CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
-CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o: ../src/Synonyms/Synonyms.cpp
-CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o -c /home/ryan/Applications/MySearchEngine/src/Synonyms/Synonyms.cpp
+CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
+CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o: /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Synonyms.cpp
+CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o -c /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Synonyms.cpp
 
-CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/src/Synonyms/Synonyms.cpp > CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.i
+CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Synonyms.cpp > CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.i
 
-CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/src/Synonyms/Synonyms.cpp -o CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.s
+CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/SearchEngine/src/Search/Synonyms.cpp -o CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.s
 
 CMakeFiles/MySearchEngine.dir/src/main.cpp.o: CMakeFiles/MySearchEngine.dir/flags.make
-CMakeFiles/MySearchEngine.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/MySearchEngine.dir/src/main.cpp.o: /home/ryan/Applications/MySearchEngine/SearchEngine/src/main.cpp
 CMakeFiles/MySearchEngine.dir/src/main.cpp.o: CMakeFiles/MySearchEngine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/Applications/MySearchEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MySearchEngine.dir/src/main.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/main.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/main.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/main.cpp.o -c /home/ryan/Applications/MySearchEngine/src/main.cpp
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySearchEngine.dir/src/main.cpp.o -MF CMakeFiles/MySearchEngine.dir/src/main.cpp.o.d -o CMakeFiles/MySearchEngine.dir/src/main.cpp.o -c /home/ryan/Applications/MySearchEngine/SearchEngine/src/main.cpp
 
 CMakeFiles/MySearchEngine.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MySearchEngine.dir/src/main.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/src/main.cpp > CMakeFiles/MySearchEngine.dir/src/main.cpp.i
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/Applications/MySearchEngine/SearchEngine/src/main.cpp > CMakeFiles/MySearchEngine.dir/src/main.cpp.i
 
 CMakeFiles/MySearchEngine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MySearchEngine.dir/src/main.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/src/main.cpp -o CMakeFiles/MySearchEngine.dir/src/main.cpp.s
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/Applications/MySearchEngine/SearchEngine/src/main.cpp -o CMakeFiles/MySearchEngine.dir/src/main.cpp.s
 
 # Object files for target MySearchEngine
 MySearchEngine_OBJECTS = \
 "CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o" \
-"CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o" \
+"CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o" \
 "CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o" \
 "CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o" \
-"CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o" \
+"CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o" \
 "CMakeFiles/MySearchEngine.dir/src/main.cpp.o"
 
 # External object files for target MySearchEngine
 MySearchEngine_EXTERNAL_OBJECTS =
 
 MySearchEngine: CMakeFiles/MySearchEngine.dir/src/CSVReader/CSVReader.cpp.o
-MySearchEngine: CMakeFiles/MySearchEngine.dir/src/Search/Config.cpp.o
+MySearchEngine: CMakeFiles/MySearchEngine.dir/src/Search/PageIndex.cpp.o
 MySearchEngine: CMakeFiles/MySearchEngine.dir/src/Search/Search.cpp.o
 MySearchEngine: CMakeFiles/MySearchEngine.dir/src/Search/SearchEngine.cpp.o
-MySearchEngine: CMakeFiles/MySearchEngine.dir/src/Synonyms/Synonyms.cpp.o
+MySearchEngine: CMakeFiles/MySearchEngine.dir/src/Search/Synonyms.cpp.o
 MySearchEngine: CMakeFiles/MySearchEngine.dir/src/main.cpp.o
 MySearchEngine: CMakeFiles/MySearchEngine.dir/build.make
 MySearchEngine: CMakeFiles/MySearchEngine.dir/link.txt
@@ -185,6 +185,6 @@ CMakeFiles/MySearchEngine.dir/clean:
 .PHONY : CMakeFiles/MySearchEngine.dir/clean
 
 CMakeFiles/MySearchEngine.dir/depend:
-	cd /home/ryan/Applications/MySearchEngine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/Applications/MySearchEngine /home/ryan/Applications/MySearchEngine /home/ryan/Applications/MySearchEngine/build /home/ryan/Applications/MySearchEngine/build /home/ryan/Applications/MySearchEngine/build/CMakeFiles/MySearchEngine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryan/Applications/MySearchEngine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/Applications/MySearchEngine/SearchEngine /home/ryan/Applications/MySearchEngine/SearchEngine /home/ryan/Applications/MySearchEngine/build /home/ryan/Applications/MySearchEngine/build /home/ryan/Applications/MySearchEngine/build/CMakeFiles/MySearchEngine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MySearchEngine.dir/depend
 
