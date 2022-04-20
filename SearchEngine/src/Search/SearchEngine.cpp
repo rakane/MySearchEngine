@@ -5,6 +5,7 @@
 Search::SearchEngine::SearchEngine()
 {   
     synonymDict_ = new Search::Synonyms();
+    filter_ = new Search::Filter();
     pageIndex_ = new Search::PageIndex();
 
     std::cout << "Num indexed words: " << pageIndex_->numElements() << "\n";
@@ -16,7 +17,7 @@ Search::SearchEngine::~SearchEngine()
     delete pageIndex_;
 }
 
-std::vector<std::pair<std::string, unsigned int>> Search::SearchEngine::search(std::string query) const
+std::vector<std::pair<Search::SearchResult, unsigned int>> Search::SearchEngine::search(std::string query) const
 {
     std::cout << "Search::SearchEngine::search(): query=\"" << query << "\"\n";
 
@@ -27,14 +28,14 @@ std::vector<std::pair<std::string, unsigned int>> Search::SearchEngine::search(s
     Search::SearchKeywords keywords = formKeywords(words);
 
     // Search page index for results
-    std::vector<std::pair<std::string, unsigned int>> results = searchPageIndex(keywords);
+    std::vector<std::pair<Search::SearchResult, unsigned int>> results = searchPageIndex(keywords);
 
     return results;
 }
 
-std::vector<std::pair<std::string, unsigned int>> Search::SearchEngine::searchPageIndex(const Search::SearchKeywords& keywords) const {
+std::vector<std::pair<Search::SearchResult, unsigned int>> Search::SearchEngine::searchPageIndex(const Search::SearchKeywords& keywords) const {
     // Map tracking how many keyword matches each site has
-    std::map<std::string, unsigned int> resultsRanking;
+    std::map<Search::SearchResult, unsigned int> resultsRanking;
 
     // Loop all keywords, for now only searching original word (first in synonym list)
     for(unsigned int keywordIdx = 0; keywordIdx < keywords.size(); keywordIdx++)
@@ -49,15 +50,20 @@ std::vector<std::pair<std::string, unsigned int>> Search::SearchEngine::searchPa
             {
                 Search::Site site = sites[siteIdx];
 
+                // Create search key
+                Search::SearchResult result;
+                result.headline = site.headline;
+                result.sitelink = site.sitelink;
+
                 // Add occurances count to map
-                if(resultsRanking.find(site.sitelink) != resultsRanking.end())
+                if(resultsRanking.find(result) != resultsRanking.end())
                 {
-                    resultsRanking[site.sitelink] += site.occurances;
+                    resultsRanking[result] += site.occurances;
                 }
                 // Insert site into map
                 else
                 {
-                    std::pair<std::string, unsigned int> pair = std::make_pair(site.sitelink, site.occurances);
+                    std::pair<Search::SearchResult, unsigned int> pair = std::make_pair(result, site.occurances);
                     resultsRanking.insert(pair);
                 }
             }
@@ -65,7 +71,7 @@ std::vector<std::pair<std::string, unsigned int>> Search::SearchEngine::searchPa
     }
 
     // Convert map to vector for sorting
-    std::vector<std::pair<std::string, unsigned int>> resultsList = {};
+    std::vector<std::pair<Search::SearchResult, unsigned int>> resultsList = {};
 
     for(auto& it : resultsRanking)
     {
@@ -74,14 +80,14 @@ std::vector<std::pair<std::string, unsigned int>> Search::SearchEngine::searchPa
 
     // Sort map by occurance count, use lambda, because modern stuff
     std::sort(resultsList.begin(), resultsList.end(),
-        [](const std::pair<std::string, unsigned int>& a, 
-           const std::pair<std::string, unsigned int>& b) -> bool
+        [](const std::pair<Search::SearchResult, unsigned int>& a, 
+           const std::pair<Search::SearchResult, unsigned int>& b) -> bool
     { 
         return a.second > b.second;
     });
 
     auto end = std::min(resultsList.begin() + 10, resultsList.end());
-    std::vector<std::pair<std::string, unsigned int>> top(resultsList.begin(), end);
+    std::vector<std::pair<Search::SearchResult, unsigned int>> top(resultsList.begin(), end);
 
     return top;
 }
@@ -132,9 +138,13 @@ std::vector<std::string> Search::SearchEngine::getWords(std::string& query, std:
         // Find substring
         s = query.substr(start, len);
 
-        // Check duplicate before inserting??
+        // Check duplicate before inserting
         auto it = std::find(words.begin(), words.end(), s);
-        if(it == words.end() && s.size() > 0)
+
+        // Check if word is in the filter before adding
+        bool filter = filter_->includes(s);
+
+        if(it == words.end() && s.size() > 0 && !filter)
         {
             words.push_back(s);
         }

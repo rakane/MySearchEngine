@@ -11,12 +11,10 @@ Search::Search::~Search()
     delete searchEngine_;
 }
 
-
-
 int Search::Search::start()
 {
     std::string input = "";
-    std::vector<std::pair<std::string, unsigned int>> results = {};
+    std::vector<std::pair<SearchResult, unsigned int>> results = {};
     
     while(input != "q")
     {
@@ -37,7 +35,7 @@ int Search::Search::start()
                 std::cout << "Results:\n";
                 for(auto it = results.begin(); it != results.end(); ++it)
                 {
-                    std::cout << it->first << ": " << it->second << "\n";
+                    std::cout << it->first.headline << ": " << it->second << "\n";
                 }
                 std::cout << "\n";
             }
@@ -53,7 +51,10 @@ int Search::Search::start()
 void Search::Search::formatInput(std::string& s,
                                  std::string whitespace)
 {
+    // Trim leading and trailing whitespace
     trim(s, whitespace);
+
+    // Trim any extra whitespace in between words
     reduce(s, whitespace);
 }
 

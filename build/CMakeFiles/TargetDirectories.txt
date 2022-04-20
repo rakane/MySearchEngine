@@ -1,3 +1,0 @@
-/home/ryan/Applications/MySearchEngine/build/CMakeFiles/MySearchEngine.dir
-/home/ryan/Applications/MySearchEngine/build/CMakeFiles/edit_cache.dir
-/home/ryan/Applications/MySearchEngine/build/CMakeFiles/rebuild_cache.dir

@@ -13,3 +13,7 @@ include_directories(include/Search include/Synonyms include/CSVReader)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
  
 add_executable(MySearchEngine ${SOURCES})
+
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries(MySearchEngine PRIVATE Threads::Threads)
